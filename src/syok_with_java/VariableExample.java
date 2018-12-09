@@ -1,10 +1,35 @@
 package syok_with_java;
 
 public class VariableExample {
+	
+	public static String staticString = "this is a static string";
 
 	public static void main(String[] args) {
+		
+		
+		
 		VariableExample variableExample = new VariableExample();
+		variableExample.demoStaticVariable();
 		variableExample.printByteArray();		
+	}
+	
+	private void demoStaticVariable() {
+		VariableExample obj = new VariableExample();
+		VariableExample obj1 = new VariableExample();
+		VariableExample obj2 = new VariableExample();
+		
+		// All three will print the same string
+		System.out.println(obj.staticString);
+		System.out.println(obj1.staticString);
+		System.out.println(obj2.staticString);
+		
+		// Change the static string from one class
+		obj1.staticString = "Changed a static string";
+		
+		// All three will print the same string
+		System.out.println(obj.staticString);
+		System.out.println(obj1.staticString);
+		System.out.println(obj2.staticString);
 	}
 	
 	// Print byte array
