@@ -5,11 +5,10 @@ public class VariableExample {
 	public static String staticString = "this is a static string";
 
 	public static void main(String[] args) {
-		
-		
-		
 		VariableExample variableExample = new VariableExample();
+		
 		variableExample.demoStaticVariable();
+		
 		variableExample.printByteArray();		
 	}
 	
