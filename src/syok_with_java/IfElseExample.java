@@ -1,6 +1,6 @@
 package syok_with_java;
 
-public class if_else_example {
+public class IfElseExample {
 	
 	public static void main(String[] args) {
 			

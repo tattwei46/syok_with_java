@@ -1,13 +1,14 @@
 package syok_with_java;
 
-public class variable_example {
+public class VariableExample {
 
 	public static void main(String[] args) {
-		printByteArray();		
+		VariableExample variableExample = new VariableExample();
+		variableExample.printByteArray();		
 	}
 	
 	// Print byte array
-	static void printByteArray() {
+	private void printByteArray() {
 		int len = 3;
 		byte data[] = new byte[len];
 		data[0] = 0x00;
